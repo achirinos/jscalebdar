@@ -1,0 +1,33 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+td {
+    text-align: center;
+}
+
+.calendar {
+    background-color: lightgray;
+    width:200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.empty {
+    background-color: gray;    
+}
+
+.weekday {
+    background-color: green;
+    color:white;
+}
+
+.weekend {
+    background-color: yellow;
+    color: brown;
+}
+
+.holiday {
+    background-color: orange;
+    color:white;
+}    
