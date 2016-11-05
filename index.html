@@ -33,7 +33,7 @@
             var numberDays = $("#numberDays").val();
             var countryCode = $("#countryCode").val();
 
-            if(startDate != "" || numberDays !="" || countryCode !="")
+            if(startDate != "" && numberDays !="" && countryCode !="")
             {
                 var cal = new Calendar("calendar");
                 cal.Draw(startDate,numberDays,countryCode);
