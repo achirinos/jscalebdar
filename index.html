@@ -19,8 +19,12 @@
         <label for="countryCode">Country Code:</label>
         <input id="countryCode" type="text" maxlength="2" placeholder="Country Code" /><br />
 
+        <span id="message"</span>
+
         <button id="btnDraw">Render Calendar</button>
     </div>
+
+    
 
     <div id="calendar">
 
@@ -37,6 +41,10 @@
             {
                 var cal = new Calendar("calendar");
                 cal.Draw(startDate,numberDays,countryCode);
+            }
+            else
+            {
+                $("#message").text("Please fill all input fields");
             }
         });
         
