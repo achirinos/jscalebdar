@@ -18,5 +18,26 @@ function Calendar(config)
         return date;
     }
 
+    var getDateArray = function (startDate, endDate, fn) {
+
+        fn = fn || Date.prototype.addDays;
+
+        var array = [];
+        var current = startDate;
+
+        while (current <= endDate) {
+            array.push({
+                day: current.getDate(),
+                month: current.getMonth(),
+                year: current.getFullYear(),
+                weekday: current.getDay()
+            });
+            current = fn.call(current, 1);
+        }
+
+        return array;
+
+    }
+
     
 }
