@@ -1,5 +1,7 @@
 function Calendar(config)
 {
+    var output = config;
+
     var cal = {};
     var current = {};
     var currentMonth = 0;
