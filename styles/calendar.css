@@ -31,3 +31,7 @@ td {
     background-color: orange;
     color:white;
 }    
+ 
+#message {
+    color: red;
+}
